@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=SEED2NEED Core
+Comment=SEED2NEED P2P Cryptocurrency
+Comment[fr]=SEED2NEED, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SEED2NEED, eşten eşe kriptografik sanal para birimi
+Exec=seed2need-qt %u
+Terminal=false
+Type=Application
+Icon=seed2need128
+MimeType=x-scheme-handler/seed2need;
+Categories=Office;Finance;
+StartupWMClass=Seed2need-qt

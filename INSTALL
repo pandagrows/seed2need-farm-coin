@@ -1,0 +1,13 @@
+Building SEED2NEED
+
+Use the autogen script to prepare the build environment.
+
+    ./autogen.sh
+    ./configure
+    make
+
+Always verify the signatures and checksums.
+
+See doc/build-*.md for instructions on building seed2needd,
+the intended-for-services, no-graphical-interface, reference
+implementation of SEED2NEED.

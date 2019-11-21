@@ -1,0 +1,6 @@
+usr/local/bin/seed2need-qt usr/bin
+share/pixmaps/seed2need32.xpm usr/share/pixmaps
+share/pixmaps/seed2need16.xpm usr/share/pixmaps
+share/pixmaps/seed2need128.png usr/share/pixmaps
+debian/seed2need-qt.desktop usr/share/applications
+debian/seed2need-qt.protocol usr/share/kde4/services/
