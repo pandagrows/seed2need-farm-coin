@@ -18,8 +18,8 @@ DOWNLOAD THE OFFICIAL SEED2NEED WALLET: https://github.com/pandagrows/seed2need-
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Maximum Coin Supply</td><td>3,000,000,000 FARM</td></tr>
-<tr><td>Premine</td><td>360,000,000 FARM</td></tr>
+<tr><td>Maximum Coin Supply</td><td>69,000,000,000 FARM</td></tr>
+<tr><td>Premine</td><td>20,000,000 FARM</td></tr>
 </table>
 
 *Premine outlined in official white paper - https://media.seed2need.me/docs/PDF_Seed2need_Whitepaper.pdf
@@ -29,7 +29,7 @@ DOWNLOAD THE OFFICIAL SEED2NEED WALLET: https://github.com/pandagrows/seed2need-
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>69,000,000,000 FARM</td><td>Initial pre-mine, non-staking (Please see above)</td></tr>
+<tr><td>1</td><td>20,000,000 FARM</td><td>Initial pre-mine, non-staking (Please see above)</td></tr>
 </table>
 
 
