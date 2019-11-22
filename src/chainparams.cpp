@@ -141,7 +141,7 @@ public:
         nDefaultPort = 14178; // Set Block Chain Port
         bnProofOfWorkLimit = ~uint256(0) >> 20; // SEED2NEED starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000; // Set block reward splitting
-        nMaxReorganizationDepth = 100;
+        nMaxReorganizationDepth = 100; //?
         nEnforceBlockUpgradeMajority = 8100; // 75%
         nRejectBlockOutdatedMajority = 10260; // 95%
         nToCheckBlockUpgradeMajority = 10800; // Approximate expected amount of blocks in 7 days (1440*7.5)
@@ -239,12 +239,13 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d77d2e35da645a626f7925fbb0c1d62f0c59b801d861353483b87dc3b0e"));
         assert(genesis.hashMerkleRoot == uint256("0xa0c60c660565c3547e4ab133aa24925f9ea8373ba939b27817abb07b3de8bc38"));
 
-        //vSeeds.push_back(CDNSSeedData("seed1",   "seed1.seed2need.me"));     // Primary DNS Seeder
-        //vSeeds.push_back(CDNSSeedData("seed2",   "seed2.seed2need.me")); 
-        //vSeeds.push_back(CDNSSeedData("seed3",   "seed3.seed2need.me"));  
+        vSeeds.push_back(CDNSSeedData("seed1",   "seed1.seed2need.me"));     // Primary DNS Seeder
+        vSeeds.push_back(CDNSSeedData("seed2",   "seed2.seed2need.me")); 
+        vSeeds.push_back(CDNSSeedData("seed3",   "seed3.seed2need.me"));  
+		vSeeds.push_back(CDNSSeedData("seed4",   "seed4.seed2need.me")); 
 		
-		vFixedSeeds.clear();
-		vSeeds.clear();
+		//vFixedSeeds.clear();
+		//vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,73); // W
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,40); // H
