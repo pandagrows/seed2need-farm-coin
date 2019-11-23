@@ -516,7 +516,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
             strHeader += rpc_user;
             strHeader += "\nrpcpassword=";
             strHeader += rpc_passwd;
-            strHeader += "txindex=1\nseed2needstake=1\n";
+            strHeader += "\ntxindex=1\nseed2needstake=1\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
         }
