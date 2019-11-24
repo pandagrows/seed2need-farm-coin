@@ -270,7 +270,7 @@ public:
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
         strSporkKey = "041f036f07bff0f469e9a535c743314b4a17429a230d809fe2401c21b00d6459662020b8c35ded7aa8fa478c39c110109d9701ab0641fd33b34f30b3dff7b5fe22";
         strObfuscationPoolDummyAddress = "SSDx9L7MAmg8yUfqMPTiRPjKJVnMyYz6mG";
-        nStartMasternodePayments = 1574545545; // Saturday, November 23, 2019 4:45:45 PM GMT-05:00
+        nStartMasternodePayments = 1574676000; // Monday, November 25, 2019 5:00:00 AM GMT-05:00
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
