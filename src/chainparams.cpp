@@ -175,7 +175,7 @@ public:
         nBlockDoubleAccumulated = 999999999;
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after Monday, August 26, 2019 11:00:00 PM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
-        nBlockStakeModifierlV2 = 110000;
+        nBlockStakeModifierlV2 = 4000;
         // Public coin spend enforcement
         nPublicZCSpends = 0;
 
@@ -270,7 +270,7 @@ public:
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
         strSporkKey = "041f036f07bff0f469e9a535c743314b4a17429a230d809fe2401c21b00d6459662020b8c35ded7aa8fa478c39c110109d9701ab0641fd33b34f30b3dff7b5fe22";
         strObfuscationPoolDummyAddress = "SSDx9L7MAmg8yUfqMPTiRPjKJVnMyYz6mG";
-        nStartMasternodePayments = 1574078400; //Monday, 18-Nov-19 12:00:00 UTC
+        nStartMasternodePayments = 1574545545; // Saturday, November 23, 2019 4:45:45 PM GMT-05:00
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
