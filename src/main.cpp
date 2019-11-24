@@ -2068,7 +2068,7 @@ int64_t GetDevelopersPayment(int nHeight, int64_t blockValue, bool isZFARMStake)
     if (isZFARMStake)
             return 0;
 
-    if (nHeight < Params().LAST_POW_BLOCK()) {
+    if (nHeight <= Params().LAST_POW_BLOCK()) {
         ret = 0.0;
     }
     else {
