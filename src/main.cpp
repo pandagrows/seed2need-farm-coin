@@ -2034,7 +2034,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, bool isZFARMStake)
     if (isZFARMStake)
         return 0;
 
-    if(nHeight < Params().LAST_POW_BLOCK()){
+    if(nHeight <= Params().LAST_POW_BLOCK()){
         ret = COIN * 0;
     }
     else if(nHeight <= 250000){
