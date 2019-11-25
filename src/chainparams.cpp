@@ -203,7 +203,7 @@ public:
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 1;
+        genesis.nVersion = 4;
         genesis.nTime = 1573717588;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 813256;

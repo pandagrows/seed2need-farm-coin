@@ -1996,26 +1996,26 @@ int64_t GetBlockValue(int nHeight)
         ret = COIN * 5263;
 
     } 
-    else if (nHeight <= 249999) {
-        ret = COIN * 1500;
+    else if (nHeight <= 2049) {
+        ret = COIN * 100;
     }
-    else if (nHeight <= 499999) {
-        ret = COIN * 3000;
+    else if (nHeight <= 2099) {
+        ret = COIN * 300;
     }
-    else if (nHeight <= 749999) {
-        ret = COIN * 5000;
+    else if (nHeight <= 2149) {
+        ret = COIN * 200;
     }
-    else if (nHeight <= 1999999) {
-        ret = COIN * 6500;
+    else if (nHeight <= 2199) {
+        ret = COIN * 400;
     }
-    else if (nHeight <= 4999999) {
-        ret = COIN * 6000;
+    else if (nHeight <= 2249) {
+        ret = COIN * 325;
     }
-    else if (nHeight <= 9999999) {
-        ret = COIN * 5000;
+    else if (nHeight <= 2299) {
+        ret = COIN * 666;
     }
-    else if (nHeight <= 14999999) {
-        ret = COIN * 3095;
+    else if (nHeight <= 2349) {
+        ret = COIN * 333;
     }
     else {
         ret = COIN * 0;
