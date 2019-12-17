@@ -21,7 +21,7 @@
 # 50 minutes [2]. Thus, if we spent too much time in early build stages, fail
 # with an error and save the cache.
 #
-# [0] https://travis-ci.org/seed2need-project/seed2need/caches
+# [0] https://travis-ci.org/pandagrows/seed2need-farm-coin/caches
 # [1] https://docs.travis-ci.com/user/caching/#build-phases
 # [2] https://docs.travis-ci.com/user/customizing-the-build#build-timeouts
 
