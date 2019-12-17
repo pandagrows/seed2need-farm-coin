@@ -6,7 +6,7 @@
 
 export LC_ALL=C.UTF-8
 
-cd "build/circuit-$HOST" || (echo "could not enter distdir build/circuit-$HOST"; exit 1)
+cd "build/seed2need-$HOST" || (echo "could not enter distdir build/seed2need-$HOST"; exit 1)
 
 if [ "$RUN_UNIT_TESTS" = "true" ]; then
   BEGIN_FOLD unit-tests
