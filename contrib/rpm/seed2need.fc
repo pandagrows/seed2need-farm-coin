@@ -1,0 +1,8 @@
+/usr/bin/seed2need-cli		--	gen_context(system_u:object_r:seed2need_exec_t,s0)
+/usr/sbin/seed2needd		--	gen_context(system_u:object_r:seed2need_exec_t,s0)
+/usr/lib(64)?/seed2need/seed2needd		--	gen_context(system_u:object_r:seed2need_exec_t,s0)
+
+/etc/seed2need(/.*)?		gen_context(system_u:object_r:seed2need_conf_t,s0)
+/var/lib/seed2need(/.*)?		gen_context(system_u:object_r:seed2need_var_lib_t,s0)
+
+(/var)?/run/seed2needd(/.*)?   gen_context(system_u:object_r:seed2need_var_run_t,s0)

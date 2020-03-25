@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2020 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,9 +8,8 @@
 #include "zfarm/accumulators.h"
 #include "main.h"
 #include "walletmodel.h"
+#include "guiutil.h"
 
-using namespace std;
-using namespace libzerocoin;
 
 std::set<std::string> ZFarmControlDialog::setSelectedMints;
 std::set<CMintMeta> ZFarmControlDialog::setMints;
@@ -30,11 +29,34 @@ ZFarmControlDialog::ZFarmControlDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setMints.clear();
-    privacyDialog = (PrivacyDialog*)parent;
+
+    /* Open CSS when configured */
+    this->setStyleSheet(GUIUtil::loadStyleSheet());
+
+    ui->frame->setProperty("cssClass", "container-dialog");
+
+    // Title
+    ui->labelTitle->setText(tr("Select zFARM Denominations to Spend"));
+    ui->labelTitle->setProperty("cssClass", "text-title-dialog");
+
+
+    // Label Style
+    ui->labelZFarm->setProperty("cssClass", "text-main-purple");
+    ui->labelZFarm_int->setProperty("cssClass", "text-main-purple");
+    ui->labelQuantity->setProperty("cssClass", "text-main-purple");
+    ui->labelQuantity_int->setProperty("cssClass", "text-main-purple");
+
+    ui->layoutAmount->setProperty("cssClass", "container-border-purple");
+    ui->layoutQuantity->setProperty("cssClass", "container-border-purple");
+
+    // Buttons
+
+    ui->btnEsc->setText("");
+    ui->btnEsc->setProperty("cssClass", "ic-close");
+    ui->pushButtonAll->setProperty("cssClass", "btn-check");
 
     // click on checkbox
     connect(ui->treeWidget, SIGNAL(itemChanged(QTreeWidgetItem*, int)), this, SLOT(updateSelection(QTreeWidgetItem*, int)));
-
     // push select/deselect all button
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
@@ -60,7 +82,7 @@ void ZFarmControlDialog::updateList()
 
     // add a top level item for each denomination
     QFlags<Qt::ItemFlag> flgTristate = Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsTristate;
-    map<libzerocoin::CoinDenomination, int> mapDenomPosition;
+    std::map<libzerocoin::CoinDenomination, int> mapDenomPosition;
     for (auto denom : libzerocoin::zerocoinDenomList) {
         CZFarmControlWidgetItem* itemDenom(new CZFarmControlWidgetItem);
         ui->treeWidget->addTopLevelItem(itemDenom);
@@ -109,19 +131,6 @@ void ZFarmControlDialog::updateList()
         itemMint->setText(COLUMN_CONFIRMATIONS, QString::number(nConfirmations));
         itemMint->setData(COLUMN_CONFIRMATIONS, Qt::UserRole, QVariant((qlonglong) nConfirmations));
 
-        {
-            LOCK(pwalletMain->zfarmTracker->cs_spendcache);
-
-            CoinWitnessData *witnessData = pwalletMain->zfarmTracker->GetSpendCache(mint.hashStake);
-            if (witnessData->nHeightAccStart > 0  && witnessData->nHeightAccEnd > 0) {
-                int nPercent = std::max(0, std::min(100, (int)((double)(witnessData->nHeightAccEnd - witnessData->nHeightAccStart) / (double)(nBestHeight - witnessData->nHeightAccStart - 220) * 100)));
-                QString percent = QString::number(nPercent) + QString("%");
-                itemMint->setText(COLUMN_PRECOMPUTE, percent);
-            } else {
-                itemMint->setText(COLUMN_PRECOMPUTE, QString("0%"));
-            }
-        }
-
         // check for maturity
         // Always mature, public spends doesn't require any new accumulation.
         bool isMature = true;
@@ -138,11 +147,11 @@ void ZFarmControlDialog::updateList()
             if (setSelectedMints.count(strPubCoinHash))
                 setSelectedMints.erase(strPubCoinHash);
 
-            string strReason = "";
+            std::string strReason = "";
             if(nConfirmations < Params().Zerocoin_MintRequiredConfirmations())
                 strReason = strprintf("Needs %d more confirmations", Params().Zerocoin_MintRequiredConfirmations() - nConfirmations);
             else if (model->getEncryptionStatus() == WalletModel::EncryptionStatus::Locked)
-                strReason = "Your wallet is locked. Impossible to precompute or spend zFARM.";
+                strReason = "Your wallet is locked. Impossible to spend zFARM.";
             else if (!mint.isSeedCorrect)
                 strReason = "The zFARM seed used to mint this zFARM is not the same as currently hold in the wallet";
             else
@@ -194,7 +203,7 @@ void ZFarmControlDialog::updateLabels()
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZFarmControlLabels(nAmount, setSelectedMints.size());
+    //privacyDialog->setZFarmControlLabels(nAmount, setSelectedMints.size());
 }
 
 std::vector<CMintMeta> ZFarmControlDialog::GetSelectedMints()

@@ -18,7 +18,7 @@ from test_framework.test_framework import BitcoinTestFramework
 from test_framework.script import CScript, OP_CHECKSIG
 from test_framework.util import hash256, bytes_to_hex_str, hex_str_to_bytes, connect_nodes_bi, p2p_port
 
-from .util import TestNode, create_transaction, utxo_to_stakingPrevOuts, dir_size
+from .util import TestNode, create_transaction, utxo_to_stakingPrevOuts, dir_size, nBlockStakeModifierlV2
 ''' -------------------------------------------------------------------------
 SEED2NEED_FakeStakeTest CLASS ----------------------------------------------------
 
@@ -117,7 +117,7 @@ class SEED2NEED_FakeStakeTest(BitcoinTestFramework):
         block = create_block(int(hashPrevBlock, 16), coinbase, nTime)
 
         # Find valid kernel hash - Create a new private key used for block signing.
-        if not block.solve_stake(stakingPrevOuts):
+        if not block.solve_stake(stakingPrevOuts, (height >= nBlockStakeModifierlV2)):
             raise Exception("Not able to solve for any prev_outpoint")
 
         # Sign coinstake TX and add it to the block
@@ -317,10 +317,8 @@ class SEED2NEED_FakeStakeTest(BitcoinTestFramework):
                 txBlocktime = utxo_tx['blocktime']
                 txBlockhash = utxo_tx['blockhash']
 
-            # get Stake Modifier
-            stakeModifier = int(self.node.getblock(txBlockhash)['modifier'], 16)
             # assemble prevout object
-            utxo_to_stakingPrevOuts(utxo, stakingPrevOuts, txBlocktime, stakeModifier, zpos)
+            utxo_to_stakingPrevOuts(utxo, stakingPrevOuts, txBlocktime, zpos)
 
         return stakingPrevOuts
 
@@ -389,7 +387,7 @@ class SEED2NEED_FakeStakeTest(BitcoinTestFramework):
             # Try submitblock
             var = self.node.submitblock(bytes_to_hex_str(block.serialize()))
             time.sleep(1)
-            if (not fMustPass and var not in [None, "bad-txns-invalid-zcrct"]) or (fMustPass and var != "inconclusive"):
+            if (not fMustPass and var not in [None, "bad-txns-invalid-zfarm"]) or (fMustPass and var != "inconclusive"):
                 self.log.error("submitblock [fMustPass=%s] result: %s" % (str(fMustPass), str(var)))
                 err_msgs.append("submitblock %d: %s" % (current_block_n, str(var)))
 

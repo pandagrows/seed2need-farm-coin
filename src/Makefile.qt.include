@@ -44,38 +44,76 @@ QT_TS = \
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
   qt/forms/askpassphrasedialog.ui \
-  qt/forms/bip38tooldialog.ui \
   qt/forms/coincontroldialog.ui \
   qt/forms/blockexplorer.ui \
   qt/forms/editaddressdialog.ui \
   qt/forms/governancepage.ui \
   qt/forms/helpmessagedialog.ui \
   qt/forms/intro.ui \
-  qt/forms/masternodelist.ui \
-  qt/forms/multisenddialog.ui \
-  qt/forms/multisigdialog.ui\
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
-  qt/forms/overviewpage.ui \
-  qt/forms/receivecoinsdialog.ui \
-  qt/forms/privacydialog.ui \
-  qt/forms/receiverequestdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/forms/sendcoinsdialog.ui \
-  qt/forms/sendcoinsentry.ui \
-  qt/forms/signverifymessagedialog.ui \
-  qt/forms/transactiondescdialog.ui \
-  qt/forms/zfarmcontroldialog.ui
+  qt/seed2need/forms/loadingdialog.ui \
+  qt/forms/zfarmcontroldialog.ui \
+  qt/seed2need/forms/snackbar.ui \
+  qt/seed2need/forms/navmenuwidget.ui \
+  qt/seed2need/forms/lockunlock.ui \
+  qt/seed2need/forms/expandablebutton.ui \
+  qt/seed2need/forms/receivedialog.ui \
+  qt/seed2need/forms/walletpassworddialog.ui \
+  qt/seed2need/forms/topbar.ui \
+  qt/seed2need/forms/txrow.ui \
+  qt/seed2need/forms/dashboardwidget.ui \
+  qt/seed2need/forms/coincontrolfarmwidget.ui \
+  qt/seed2need/forms/addresslabelrow.ui \
+  qt/seed2need/forms/contactdropdownrow.ui \
+  qt/seed2need/forms/mninfodialog.ui \
+  qt/seed2need/forms/optionbutton.ui \
+  qt/seed2need/forms/masternodewizarddialog.ui \
+  qt/seed2need/forms/mnrow.ui \
+  qt/seed2need/forms/masternodeswidget.ui \
+  qt/seed2need/forms/myaddressrow.ui \
+  qt/seed2need/forms/csrow.ui \
+  qt/seed2need/forms/sendchangeaddressdialog.ui \
+  qt/seed2need/forms/sendconfirmdialog.ui \
+  qt/seed2need/forms/sendcustomfeedialog.ui \
+  qt/seed2need/forms/sendchangeaddressdialog.ui \
+  qt/seed2need/forms/sendmultirow.ui \
+  qt/seed2need/forms/send.ui \
+  qt/seed2need/forms/addnewaddressdialog.ui \
+  qt/seed2need/forms/addnewcontactdialog.ui \
+  qt/seed2need/forms/requestdialog.ui \
+  qt/seed2need/forms/receivewidget.ui \
+  qt/seed2need/forms/tooltipmenu.ui \
+  qt/seed2need/forms/addresseswidget.ui \
+  qt/seed2need/forms/defaultdialog.ui \
+  qt/seed2need/forms/denomgenerationdialog.ui \
+  qt/seed2need/forms/privacywidget.ui \
+  qt/seed2need/forms/coldstakingwidget.ui \
+  qt/seed2need/settings/forms/settingsbackupwallet.ui \
+  qt/seed2need/settings/forms/settingsbittoolwidget.ui \
+  qt/seed2need/settings/forms/settingsconsolewidget.ui \
+  qt/seed2need/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/seed2need/settings/forms/settingsfaqwidget.ui \
+  qt/seed2need/settings/forms/settingsinformationwidget.ui \
+  qt/seed2need/settings/forms/settingsmainoptionswidget.ui \
+  qt/seed2need/settings/forms/settingsmultisenddialog.ui \
+  qt/seed2need/settings/forms/settingsmultisendwidget.ui \
+  qt/seed2need/settings/forms/settingssignmessagewidgets.ui \
+  qt/seed2need/settings/forms/settingswalletoptionswidget.ui \
+  qt/seed2need/settings/forms/settingswalletrepairwidget.ui \
+  qt/seed2need/settings/forms/settingswidget.ui \
+  qt/seed2need/forms/welcomecontentwidget.ui \
+  qt/seed2need/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_bip38tooldialog.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoingui.cpp \
+  qt/seed2need/moc_seed2needgui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
@@ -88,39 +126,82 @@ QT_MOC_CPP = \
   qt/moc_intro.cpp \
   qt/moc_macdockiconhandler.cpp \
   qt/moc_macnotificationhandler.cpp \
-  qt/moc_masternodelist.cpp \
-  qt/moc_multisenddialog.cpp \
-  qt/moc_multisigdialog.cpp\
   qt/moc_notificator.cpp \
   qt/moc_openuridialog.cpp \
   qt/moc_optionsdialog.cpp \
   qt/moc_optionsmodel.cpp \
-  qt/moc_overviewpage.cpp \
   qt/moc_peertablemodel.cpp \
   qt/moc_paymentserver.cpp \
   qt/moc_qvalidatedlineedit.cpp \
   qt/moc_qvaluecombobox.cpp \
-  qt/moc_receivecoinsdialog.cpp \
-  qt/moc_privacydialog.cpp \
   qt/moc_proposalframe.cpp \
-  qt/moc_receiverequestdialog.cpp \
   qt/moc_recentrequeststablemodel.cpp \
   qt/moc_rpcconsole.cpp \
-  qt/moc_sendcoinsdialog.cpp \
-  qt/moc_sendcoinsentry.cpp \
-  qt/moc_signverifymessagedialog.cpp \
   qt/moc_splashscreen.cpp \
   qt/moc_trafficgraphwidget.cpp \
   qt/moc_transactiondesc.cpp \
-  qt/moc_transactiondescdialog.cpp \
   qt/moc_transactionfilterproxy.cpp \
   qt/moc_transactiontablemodel.cpp \
-  qt/moc_transactionview.cpp \
   qt/moc_utilitydialog.cpp \
-  qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
-  qt/moc_walletview.cpp \
-  qt/moc_zfarmcontroldialog.cpp
+  qt/seed2need/moc_loadingdialog.cpp \
+  qt/moc_zfarmcontroldialog.cpp \
+  qt/seed2need/moc_pwidget.cpp \
+  qt/seed2need/moc_snackbar.cpp \
+  qt/seed2need/moc_navmenuwidget.cpp \
+  qt/seed2need/moc_lockunlock.cpp \
+  qt/seed2need/moc_expandablebutton.cpp \
+  qt/seed2need/moc_furabstractlistitemdelegate.cpp \
+  qt/seed2need/moc_receivedialog.cpp \
+  qt/seed2need/moc_walletpassworddialog.cpp \
+  qt/seed2need/moc_pfborderimage.cpp \
+  qt/seed2need/moc_topbar.cpp \
+  qt/seed2need/moc_txrow.cpp \
+  qt/seed2need/moc_dashboardwidget.cpp \
+  qt/seed2need/moc_coincontrolfarmwidget.cpp \
+  qt/seed2need/moc_addresslabelrow.cpp \
+  qt/seed2need/moc_contactdropdownrow.cpp \
+  qt/seed2need/moc_mninfodialog.cpp \
+  qt/seed2need/moc_optionbutton.cpp \
+  qt/seed2need/moc_coldstakingmodel.cpp \
+  qt/seed2need/moc_mnmodel.cpp \
+  qt/seed2need/moc_masternodewizarddialog.cpp \
+  qt/seed2need/moc_mnrow.cpp \
+  qt/seed2need/moc_masternodeswidget.cpp \
+  qt/seed2need/moc_myaddressrow.cpp \
+  qt/seed2need/moc_csrow.cpp \
+  qt/seed2need/moc_contactsdropdown.cpp \
+  qt/seed2need/moc_sendchangeaddressdialog.cpp \
+  qt/seed2need/moc_sendconfirmdialog.cpp \
+  qt/seed2need/moc_sendcustomfeedialog.cpp \
+  qt/seed2need/moc_sendchangeaddressdialog.cpp \
+  qt/seed2need/moc_sendmultirow.cpp \
+  qt/seed2need/moc_send.cpp \
+  qt/seed2need/moc_addnewaddressdialog.cpp \
+  qt/seed2need/moc_addnewcontactdialog.cpp \
+  qt/seed2need/moc_requestdialog.cpp \
+  qt/seed2need/moc_receivewidget.cpp \
+  qt/seed2need/moc_tooltipmenu.cpp \
+  qt/seed2need/moc_addresseswidget.cpp \
+  qt/seed2need/moc_defaultdialog.cpp \
+  qt/seed2need/moc_denomgenerationdialog.cpp \
+  qt/seed2need/moc_privacywidget.cpp \
+  qt/seed2need/moc_coldstakingwidget.cpp \
+  qt/seed2need/settings/moc_settingsbackupwallet.cpp \
+  qt/seed2need/settings/moc_settingsbittoolwidget.cpp \
+  qt/seed2need/settings/moc_settingsconsolewidget.cpp \
+  qt/seed2need/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/seed2need/settings/moc_settingsfaqwidget.cpp \
+  qt/seed2need/settings/moc_settingsinformationwidget.cpp \
+  qt/seed2need/settings/moc_settingsmainoptionswidget.cpp \
+  qt/seed2need/settings/moc_settingsmultisenddialog.cpp \
+  qt/seed2need/settings/moc_settingsmultisendwidget.cpp \
+  qt/seed2need/settings/moc_settingssignmessagewidgets.cpp \
+  qt/seed2need/settings/moc_settingswalletoptionswidget.cpp \
+  qt/seed2need/settings/moc_settingswalletrepairwidget.cpp \
+  qt/seed2need/settings/moc_settingswidget.cpp \
+  qt/seed2need/moc_welcomecontentwidget.cpp \
+  qt/seed2need/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
@@ -130,8 +211,8 @@ QT_MOC = \
   qt/seed2need.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
-  qt/overviewpage.moc \
-  qt/rpcconsole.moc
+  qt/rpcconsole.moc \
+  qt/seed2need/settings/moc_settingsconsolewidget.cpp
 
 QT_QRC_CPP = qt/qrc_seed2need.cpp
 QT_QRC = qt/seed2need.qrc
@@ -147,10 +228,9 @@ BITCOIN_QT_H = \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/bip38tooldialog.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/bitcoingui.h \
+  qt/seed2need/seed2needgui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
@@ -164,15 +244,11 @@ BITCOIN_QT_H = \
   qt/intro.h \
   qt/macdockiconhandler.h \
   qt/macnotificationhandler.h \
-  qt/masternodelist.h \
-  qt/multisenddialog.h \
-  qt/multisigdialog.h\
   qt/networkstyle.h \
   qt/notificator.h \
   qt/openuridialog.h \
   qt/optionsdialog.h \
   qt/optionsmodel.h \
-  qt/overviewpage.h \
   qt/paymentrequestplus.h \
   qt/paymentserver.h \
   qt/peertablemodel.h \
@@ -180,29 +256,83 @@ BITCOIN_QT_H = \
   qt/proposalframe.h \
   qt/qvalidatedlineedit.h \
   qt/qvaluecombobox.h \
-  qt/receivecoinsdialog.h \
-  qt/privacydialog.h \
-  qt/receiverequestdialog.h \
   qt/recentrequeststablemodel.h \
   qt/rpcconsole.h \
-  qt/sendcoinsdialog.h \
-  qt/sendcoinsentry.h \
-  qt/signverifymessagedialog.h \
   qt/splashscreen.h \
   qt/trafficgraphwidget.h \
   qt/transactiondesc.h \
-  qt/transactiondescdialog.h \
   qt/transactionfilterproxy.h \
   qt/transactionrecord.h \
   qt/transactiontablemodel.h \
-  qt/transactionview.h \
   qt/utilitydialog.h \
-  qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/walletview.h \
+  qt/seed2need/prunnable.h \
+  qt/seed2need/pfborderimage.h \
+  qt/seed2need/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zfarmcontroldialog.h
+  qt/zfarmcontroldialog.h \
+  qt/seed2need/pwidget.h \
+  qt/seed2need/guitransactionsutils.h \
+  qt/seed2need/snackbar.h \
+  qt/seed2need/navmenuwidget.h \
+  qt/seed2need/lockunlock.h \
+  qt/seed2need/receivedialog.h \
+  qt/seed2need/furlistrow.h \
+  qt/seed2need/furabstractlistitemdelegate.h \
+  qt/seed2need/txviewholder.h \
+  qt/seed2need/qtutils.h \
+  qt/seed2need/expandablebutton.h \
+  qt/seed2need/walletpassworddialog.h \
+  qt/seed2need/topbar.h \
+  qt/seed2need/txrow.h \
+  qt/seed2need/addressholder.h \
+  qt/seed2need/addressfilterproxymodel.h \
+  qt/seed2need/dashboardwidget.h \
+  qt/seed2need/coincontrolfarmwidget.h \
+  qt/seed2need/addresslabelrow.h \
+  qt/seed2need/contactdropdownrow.h \
+  qt/seed2need/mninfodialog.h \
+  qt/seed2need/optionbutton.h \
+  qt/seed2need/coldstakingmodel.h \
+  qt/seed2need/mnmodel.h \
+  qt/seed2need/masternodewizarddialog.h \
+  qt/seed2need/mnrow.h \
+  qt/seed2need/masternodeswidget.h \
+  qt/seed2need/myaddressrow.h \
+  qt/seed2need/csrow.h \
+  qt/seed2need/contactsdropdown.h \
+  qt/seed2need/sendchangeaddressdialog.h \
+  qt/seed2need/sendconfirmdialog.h \
+  qt/seed2need/sendcustomfeedialog.h \
+  qt/seed2need/sendchangeaddressdialog.h \
+  qt/seed2need/sendmultirow.h \
+  qt/seed2need/send.h \
+  qt/seed2need/addnewaddressdialog.h \
+  qt/seed2need/addnewcontactdialog.h \
+  qt/seed2need/requestdialog.h \
+  qt/seed2need/receivewidget.h \
+  qt/seed2need/tooltipmenu.h \
+  qt/seed2need/addresseswidget.h \
+  qt/seed2need/defaultdialog.h \
+  qt/seed2need/denomgenerationdialog.h \
+  qt/seed2need/privacywidget.h \
+  qt/seed2need/coldstakingwidget.h \
+  qt/seed2need/settings/settingsbackupwallet.h \
+  qt/seed2need/settings/settingsbittoolwidget.h \
+  qt/seed2need/settings/settingsconsolewidget.h \
+  qt/seed2need/settings/settingsdisplayoptionswidget.h \
+  qt/seed2need/settings/settingsfaqwidget.h \
+  qt/seed2need/settings/settingsinformationwidget.h \
+  qt/seed2need/settings/settingsmainoptionswidget.h \
+  qt/seed2need/settings/settingsmultisenddialog.h \
+  qt/seed2need/settings/settingsmultisendwidget.h \
+  qt/seed2need/settings/settingssignmessagewidgets.h \
+  qt/seed2need/settings/settingswalletoptionswidget.h \
+  qt/seed2need/settings/settingswalletrepairwidget.h \
+  qt/seed2need/settings/settingswidget.h \
+  qt/seed2need/welcomecontentwidget.h \
+  qt/seed2need/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -264,6 +394,10 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
   qt/res/icons/unit_seed2need.png \
   qt/res/icons/unit_mseed2need.png \
   qt/res/icons/unit_useed2need.png \
@@ -272,20 +406,224 @@ RES_ICONS = \
   qt/res/icons/unit_tuseed2need.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
-  qt/res/icons/abstainvote.png
+  qt/res/icons/abstainvote.png \
+  qt/seed2need/res/img/bg-dashboard-banner.png \
+  qt/seed2need/res/img/bg-multi-number-dark.svg \
+  qt/seed2need/res/img/ic-check-locked.svg \
+  qt/seed2need/res/img/ic-nav-address.svg \
+  qt/seed2need/res/img/ic-update.svg \
+  qt/seed2need/res/img/bg-multi-number.svg \
+  qt/seed2need/res/img/ic-check-mint-off.svg \
+  qt/seed2need/res/img/ic-nav-cold-staking.svg \
+  qt/seed2need/res/img/ic-nav-cold-staking-active.svg \
+  qt/seed2need/res/img/ic-nav-dashboard-active.svg \
+  qt/seed2need/res/img/ic-wallet-status-locked.svg \
+  qt/seed2need/res/img/bg-splash.svg \
+  qt/seed2need/res/img/bg-splash.png \
+  qt/seed2need/res/img/ic-check-mint.svg \
+  qt/seed2need/res/img/ic-nav-dashboard-hover.svg \
+  qt/seed2need/res/img/ic-wallet-status-staking.svg \
+  qt/seed2need/res/img/ic-check-peers-off.svg \
+  qt/seed2need/res/img/ic-nav-dashboard.svg \
+  qt/seed2need/res/img/ic-wallet-status-unlocked.svg \
+  qt/seed2need/res/img/ic-check-peers.svg \
+  qt/seed2need/res/img/ic-nav-master-active.svg \
+  qt/seed2need/res/img/ic-watch-password-white.svg \
+  qt/seed2need/res/img/bg-welcome-container.jpg \
+  qt/seed2need/res/img/bg-welcome-container.png \
+  qt/seed2need/res/img/bg-welcome-container.svg \
+  qt/seed2need/res/img/bg-welcome-container@2x.png \
+  qt/seed2need/res/img/bg-welcome-container@3x.png \
+  qt/seed2need/res/img/ic-check-staking-off.svg \
+  qt/seed2need/res/img/ic-nav-master-hover.svg \
+  qt/seed2need/res/img/ic-watch-password.svg \
+  qt/seed2need/res/img/bg-welcome.jpg \
+  qt/seed2need/res/img/bg-welcome.svg \
+  qt/seed2need/res/img/bg-welcome@2x.jpg \
+  qt/seed2need/res/img/bg-welcome@3x.jpg \
+  qt/seed2need/res/img/bg-welcome.png \
+  qt/seed2need/res/img/ic-check-staking.svg \
+  qt/seed2need/res/img/ic-nav-master.svg \
+  qt/seed2need/res/img/img-dashboard-banner.jpg \
+  qt/seed2need/res/img/btn-radio-active.svg \
+  qt/seed2need/res/img/ic-check-sync-off.svg \
+  qt/seed2need/res/img/ic-nav-privacy-active.svg \
+  qt/seed2need/res/img/img-empty-contacts.svg \
+  qt/seed2need/res/img/btn-radio-off.svg \
+  qt/seed2need/res/img/ic-check-sync.png \
+  qt/seed2need/res/img/ic-nav-privacy-hover.svg \
+  qt/seed2need/res/img/img-empty-dark-contacts.svg \
+  qt/seed2need/res/img/ic-contact-arrow-down.svg \
+  qt/seed2need/res/img/ic-contact-arrow-down-white.svg \
+  qt/seed2need/res/img/ic-check-sync.svg \
+  qt/seed2need/res/img/ic-check-faq.svg \
+  qt/seed2need/res/img/ic-nav-privacy.svg \
+  qt/seed2need/res/img/img-empty-dark-error.svg \
+  qt/seed2need/res/img/ic-add-label.svg \
+  qt/seed2need/res/img/ic-pending.svg \
+  qt/seed2need/res/img/ic-check-theme-dark.svg \
+  qt/seed2need/res/img/ic-nav-receive-active.svg \
+  qt/seed2need/res/img/img-empty-dark-masternode.svg \
+  qt/seed2need/res/img/ic-add-liliac.svg \
+  qt/seed2need/res/img/ic-check-theme-light.svg \
+  qt/seed2need/res/img/ic-nav-receive-hover.svg \
+  qt/seed2need/res/img/img-empty-dark-multisend.svg \
+  qt/seed2need/res/img/ic-add-purple.svg \
+  qt/seed2need/res/img/ic-check-white.svg \
+  qt/seed2need/res/img/ic-nav-receive.svg \
+  qt/seed2need/res/img/img-empty-dark-peers.svg \
+  qt/seed2need/res/img/ic-add.svg \
+  qt/seed2need/res/img/ic-check.svg \
+  qt/seed2need/res/img/ic-nav-send-active.svg \
+  qt/seed2need/res/img/img-empty-dark-staking-off.svg \
+  qt/seed2need/res/img/img-empty-dark-staking-on.svg \
+  qt/seed2need/res/img/ic-address-book-grey.svg \
+  qt/seed2need/res/img/ic-chevron-left.svg \
+  qt/seed2need/res/img/ic-nav-send-hover.svg \
+  qt/seed2need/res/img/img-empty-dark-transactions.svg \
+  qt/seed2need/res/img/ic-address-book-white.svg \
+  qt/seed2need/res/img/ic-chevron-right.svg \
+  qt/seed2need/res/img/ic-nav-send.svg \
+  qt/seed2need/res/img/img-empty-error.svg \
+  qt/seed2need/res/img/ic-address-book.svg \
+  qt/seed2need/res/img/ic-clear-liliac.svg \
+  qt/seed2need/res/img/ic-nav-settings-active.svg \
+  qt/seed2need/res/img/img-empty-masternode.svg \
+  qt/seed2need/res/img/ic-address-send-white.svg \
+  qt/seed2need/res/img/ic-clear-purple.svg \
+  qt/seed2need/res/img/ic-nav-settings-hover.svg \
+  qt/seed2need/res/img/img-empty-multisend.svg \
+  qt/seed2need/res/img/ic-address-send.svg \
+  qt/seed2need/res/img/ic-close-white.svg \
+  qt/seed2need/res/img/ic-nav-settings.svg \
+  qt/seed2need/res/img/img-empty-peers.svg \
+  qt/seed2need/res/img/img-empty-privacy.svg \
+  qt/seed2need/res/img/img-empty-privacy-dark.svg \
+  qt/seed2need/res/img/ic-arrow-drop-down-white.svg \
+  qt/seed2need/res/img/ic-close.svg \
+  qt/seed2need/res/img/ic-radio-liliac-on.svg \
+  qt/seed2need/res/img/img-empty-staking-off.svg \
+  qt/seed2need/res/img/ic-arrow-drop-down.svg \
+  qt/seed2need/res/img/ic-coin-farm.svg \
+  qt/seed2need/res/img/ic-receive-off.svg \
+  qt/seed2need/res/img/img-empty-staking-on.svg \
+  qt/seed2need/res/img/ic-arrow-drop-up-white.svg \
+  qt/seed2need/res/img/ic-coin-zfarm.png \
+  qt/seed2need/res/img/ic-receive-on.svg \
+  qt/seed2need/res/img/img-empty-transactions.svg \
+  qt/seed2need/res/img/ic-arrow-drop-up.svg \
+  qt/seed2need/res/img/ic-coin-zfarm.svg \
+  qt/seed2need/res/img/ic-received.svg \
+  qt/seed2need/res/img/img-logo-seed2need.png \
+  qt/seed2need/res/img/ic-arrow-drop-white-down.svg \
+  qt/seed2need/res/img/ic-combo-box.svg \
+  qt/seed2need/res/img/ic-send.svg \
+  qt/seed2need/res/img/img-logo-seed2need@2x.png \
+  qt/seed2need/res/img/ic-arrow-purple-down.svg \
+  qt/seed2need/res/img/ic-connect.svg \
+  qt/seed2need/res/img/ic-submenu-lock.svg \
+  qt/seed2need/res/img/img-logo-seed2need@3x.png \
+  qt/seed2need/res/img/img-logo-seed2need.svg \
+  qt/seed2need/res/img/ic-arrow-right-white.svg \
+  qt/seed2need/res/img/ic-arrow-left-white.svg \
+  qt/seed2need/res/img/ic-arrow-left.svg \
+  qt/seed2need/res/img/ic-copy-liliac.svg \
+  qt/seed2need/res/img/ic-submenu-staking.svg \
+  qt/seed2need/res/img/img-nav-logo-seed2need.png \
+  qt/seed2need/res/img/ic-arrow-right.svg \
+  qt/seed2need/res/img/ic-copy.svg \
+  qt/seed2need/res/img/ic-copy-big.svg \
+  qt/seed2need/res/img/ic-copy-big-white.svg \
+  qt/seed2need/res/img/ic-submenu-unlock.svg \
+  qt/seed2need/res/img/img-nav-logo.png \
+  qt/seed2need/res/img/ic-arrow-white-left.svg \
+  qt/seed2need/res/img/ic-exit.svg \
+  qt/seed2need/res/img/ic-switch-liliac-on.svg \
+  qt/seed2need/res/img/img-nav-logo.svg \
+  qt/seed2need/res/img/ic-arrow-white-right.svg \
+  qt/seed2need/res/img/ic-expand.svg \
+  qt/seed2need/res/img/ic-switch-off.svg \
+  qt/seed2need/res/img/img-qr-test-big.png \
+  qt/seed2need/res/img/ic-check-active.svg \
+  qt/seed2need/res/img/ic-folder.svg \
+  qt/seed2need/res/img/ic-switch-on.svg \
+  qt/seed2need/res/img/img-qr-test.png \
+  qt/seed2need/res/img/ic-check-box.svg \
+  qt/seed2need/res/img/ic-check-box-dark-active.svg \
+  qt/seed2need/res/img/ic-check-box-indeterminate.svg \
+  qt/seed2need/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/seed2need/res/img/ic-label-liliac.svg \
+  qt/seed2need/res/img/ic-transaction-warning.svg \
+  qt/seed2need/res/img/ic-transaction-mint.svg \
+  qt/seed2need/res/img/ic-transaction-mint-inactive.svg \
+  qt/seed2need/res/img/ic-check-cold-staking.svg \
+  qt/seed2need/res/img/ic-check-cold-staking-off.svg \
+  qt/seed2need/res/img/ic-check-cold-staking-enabled.svg \
+  qt/seed2need/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/seed2need/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/seed2need/res/img/img-qr.svg \
+  qt/seed2need/res/img/ic-check-connect-off.svg \
+  qt/seed2need/res/img/ic-label.svg \
+  qt/seed2need/res/img/ic-transaction-received.svg \
+  qt/seed2need/res/img/dark/ic-transaction-received.svg \
+  qt/seed2need/res/img/dark/ic-transaction-warning.svg \
+  qt/seed2need/res/img/dark/ic-transaction-mint.svg \
+  qt/seed2need/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/seed2need/res/img/ic-transaction-received-inactive.svg \
+  qt/seed2need/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/seed2need/res/img/img-welcome-step1.png \
+  qt/seed2need/res/img/ic-check-connect.svg \
+  qt/seed2need/res/img/ic-menu-hover.svg \
+  qt/seed2need/res/img/ic-transaction-sent.svg \
+  qt/seed2need/res/img/ic-transaction-sent-inactive.svg \
+  qt/seed2need/res/img/dark/ic-transaction-sent.svg \
+  qt/seed2need/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/seed2need/res/img/img-welcome-step2.png \
+  qt/seed2need/res/img/ic-check-dark.svg \
+  qt/seed2need/res/img/ic-mint.svg \
+  qt/seed2need/res/img/ic-transaction-staked.svg \
+  qt/seed2need/res/img/ic-transaction-staked-inactive.svg \
+  qt/seed2need/res/img/dark/ic-transaction-staked.svg \
+  qt/seed2need/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/seed2need/res/img/img-welcome-step3.png \
+  qt/seed2need/res/img/ic-check-liliac-on.svg \
+  qt/seed2need/res/img/ic-nav-address-active.svg \
+  qt/seed2need/res/img/ic-unlock-staking.svg \
+  qt/seed2need/res/img/img-welcome-step4.png \
+  qt/seed2need/res/img/ic-check-locked-off.svg \
+  qt/seed2need/res/img/ic-nav-address-hover.svg \
+  qt/seed2need/res/img/ic-update-liliac.svg \
+  qt/seed2need/res/img/ic-arrow-drop-down-purple.svg \
+  qt/seed2need/res/img/ic-arrow-drop-up-purple.svg \
+  qt/seed2need/res/img/ic-check-liliac-indeterminate.svg \
+  qt/seed2need/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/seed2need/res/img/ic-transaction-stake-delegated.svg \
+  qt/seed2need/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/seed2need/res/img/ic-transaction-stake-hot.svg \
+  qt/seed2need/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/seed2need/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/seed2need/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/seed2need/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/seed2need/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/seed2need/res/img/ic-transaction-cs-contract.svg \
+  qt/seed2need/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/seed2need/res/img/ic-check-box-indeterminate.svg \
+  qt/seed2need/res/img/ani-loading-dark.gif \
+  qt/seed2need/res/img/ani-loading.gif
+
+
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
+  qt/seed2need/seed2needgui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
   qt/intro.cpp \
-  qt/masternodelist.cpp \
   qt/networkstyle.cpp \
   qt/notificator.cpp \
   qt/optionsdialog.cpp \
@@ -305,38 +643,85 @@ BITCOIN_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
-  qt/bip38tooldialog.cpp \
   qt/blockexplorer.cpp \
   qt/coincontroldialog.cpp \
   qt/coincontroltreewidget.cpp \
   qt/editaddressdialog.cpp \
   qt/governancepage.cpp \
-  qt/masternodelist.cpp \
-  qt/multisenddialog.cpp \
-  qt/multisigdialog.cpp\
   qt/openuridialog.cpp \
-  qt/overviewpage.cpp \
   qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
-  qt/receivecoinsdialog.cpp \
-  qt/privacydialog.cpp \
   qt/proposalframe.cpp \
-  qt/receiverequestdialog.cpp \
   qt/recentrequeststablemodel.cpp \
-  qt/sendcoinsdialog.cpp \
-  qt/sendcoinsentry.cpp \
-  qt/signverifymessagedialog.cpp \
   qt/transactiondesc.cpp \
-  qt/transactiondescdialog.cpp \
   qt/transactionfilterproxy.cpp \
   qt/transactionrecord.cpp \
   qt/transactiontablemodel.cpp \
-  qt/transactionview.cpp \
-  qt/walletframe.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/walletview.cpp \
-  qt/zfarmcontroldialog.cpp
+  qt/seed2need/loadingdialog.cpp \
+  qt/zfarmcontroldialog.cpp \
+  qt/seed2need/pwidget.cpp \
+  qt/seed2need/guitransactionsutils.cpp \
+  qt/seed2need/snackbar.cpp \
+  qt/seed2need/navmenuwidget.cpp \
+  qt/seed2need/lockunlock.cpp \
+  qt/seed2need/receivedialog.cpp \
+  qt/seed2need/furabstractlistitemdelegate.cpp \
+  qt/seed2need/txviewholder.cpp \
+  qt/seed2need/qtutils.cpp \
+  qt/seed2need/expandablebutton.cpp \
+  qt/seed2need/walletpassworddialog.cpp \
+  qt/seed2need/topbar.cpp \
+  qt/seed2need/txrow.cpp \
+  qt/seed2need/addressholder.cpp \
+  qt/seed2need/addressfilterproxymodel.cpp \
+  qt/seed2need/dashboardwidget.cpp \
+  qt/seed2need/coincontrolfarmwidget.cpp \
+  qt/seed2need/addresslabelrow.cpp \
+  qt/seed2need/contactdropdownrow.cpp \
+  qt/seed2need/contactsdropdown.cpp \
+  qt/seed2need/optionbutton.cpp \
+  qt/seed2need/mninfodialog.cpp \
+  qt/seed2need/coldstakingmodel.cpp \
+  qt/seed2need/mnmodel.cpp \
+  qt/seed2need/masternodewizarddialog.cpp \
+  qt/seed2need/mnrow.cpp \
+  qt/seed2need/masternodeswidget.cpp \
+  qt/seed2need/myaddressrow.cpp \
+  qt/seed2need/csrow.cpp \
+  qt/seed2need/sendchangeaddressdialog.cpp \
+  qt/seed2need/sendconfirmdialog.cpp \
+  qt/seed2need/sendcustomfeedialog.cpp \
+  qt/seed2need/sendchangeaddressdialog.cpp \
+  qt/seed2need/sendmultirow.cpp \
+  qt/seed2need/send.cpp \
+  qt/seed2need/addnewaddressdialog.cpp \
+  qt/seed2need/addnewcontactdialog.cpp \
+  qt/seed2need/requestdialog.cpp \
+  qt/seed2need/receivewidget.cpp \
+  qt/seed2need/tooltipmenu.cpp \
+  qt/seed2need/addresseswidget.cpp \
+  qt/seed2need/defaultdialog.cpp \
+  qt/seed2need/denomgenerationdialog.cpp \
+  qt/seed2need/privacywidget.cpp \
+  qt/seed2need/coldstakingwidget.cpp \
+  qt/seed2need/settings/settingsbackupwallet.cpp \
+  qt/seed2need/settings/settingsbittoolwidget.cpp \
+  qt/seed2need/settings/settingsconsolewidget.cpp \
+  qt/seed2need/settings/settingsdisplayoptionswidget.cpp \
+  qt/seed2need/settings/settingsfaqwidget.cpp \
+  qt/seed2need/settings/settingsinformationwidget.cpp \
+  qt/seed2need/settings/settingsmainoptionswidget.cpp \
+  qt/seed2need/settings/settingsmultisenddialog.cpp \
+  qt/seed2need/settings/settingsmultisendwidget.cpp \
+  qt/seed2need/settings/settingssignmessagewidgets.cpp \
+  qt/seed2need/settings/settingswalletoptionswidget.cpp \
+  qt/seed2need/settings/settingswalletrepairwidget.cpp \
+  qt/seed2need/settings/settingswidget.cpp \
+  qt/seed2need/welcomecontentwidget.cpp \
+  qt/seed2need/splash.cpp
+
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
 if TARGET_WINDOWS
@@ -362,7 +747,9 @@ RES_IMAGES = \
   qt/res/images/qtreeview_selected.png
 
 RES_CSS = \
-  qt/res/css/default.css
+  qt/res/css/default.css \
+  qt/seed2need/res/css/style_dark.css \
+  qt/seed2need/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
@@ -372,7 +759,7 @@ BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
 
 qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
 qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
@@ -397,7 +784,7 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # seed2need-qt binary #
 qt_seed2need_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
 qt_seed2need_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_seed2need_qt_SOURCES = qt/seed2need.cpp
@@ -415,7 +802,7 @@ if ENABLE_ZMQ
 qt_seed2need_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 qt_seed2need_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 qt_seed2need_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 qt_seed2need_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX

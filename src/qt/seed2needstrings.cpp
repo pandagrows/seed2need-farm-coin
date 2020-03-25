@@ -36,7 +36,7 @@ QT_TRANSLATE_NOOP("seed2need-core", ""
 "running."),
 QT_TRANSLATE_NOOP("seed2need-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
-"exact finalized budget match to my generated budget. (std::string, default: auto)"),
+"exact finalized budget match to my generated budget. (string, default: auto)"),
 QT_TRANSLATE_NOOP("seed2need-core", ""
 "Continuously rate-limit free transactions to <n>*1000 bytes per minute "
 "(default:%u)"),
@@ -62,6 +62,8 @@ QT_TRANSLATE_NOOP("seed2need-core", ""
 QT_TRANSLATE_NOOP("seed2need-core", ""
 "Enable automatic wallet backups triggered after each zFARM minting (0-1, "
 "default: %u)"),
+QT_TRANSLATE_NOOP("seed2need-core", ""
+"Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"),
 QT_TRANSLATE_NOOP("seed2need-core", ""
 "Enable or disable staking functionality for FARM inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("seed2need-core", ""
@@ -226,6 +228,10 @@ QT_TRANSLATE_NOOP("seed2need-core", ""
 "Warning: -paytxfee is set very high! This is the transaction fee you will "
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("seed2need-core", ""
+"Warning: Peers are being disconnected due time differences. Please check "
+"that your computer's date and time are correct! If your clock is wrong SEED2NEED "
+"Core will not work properly."),
+QT_TRANSLATE_NOOP("seed2need-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
 "your clock is wrong SEED2NEED Core will not work properly."),
 QT_TRANSLATE_NOOP("seed2need-core", ""
@@ -250,10 +256,10 @@ QT_TRANSLATE_NOOP("seed2need-core", ""
 QT_TRANSLATE_NOOP("seed2need-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("seed2need-core", "(14178 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("seed2need-core", "(2020 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("seed2need-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("seed2need-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("seed2need-core", "(must be 14178 for mainnet)"),
+QT_TRANSLATE_NOOP("seed2need-core", "(must be 2020 for mainnet)"),
 QT_TRANSLATE_NOOP("seed2need-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("seed2need-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("seed2need-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
@@ -273,7 +279,6 @@ QT_TRANSLATE_NOOP("seed2need-core", "Cannot downgrade wallet"),
 QT_TRANSLATE_NOOP("seed2need-core", "Cannot resolve -bind address: '%s'"),
 QT_TRANSLATE_NOOP("seed2need-core", "Cannot resolve -externalip address: '%s'"),
 QT_TRANSLATE_NOOP("seed2need-core", "Cannot resolve -whitebind address: '%s'"),
-QT_TRANSLATE_NOOP("seed2need-core", "Cannot write default address"),
 QT_TRANSLATE_NOOP("seed2need-core", "CoinSpend: Accumulator witness does not verify"),
 QT_TRANSLATE_NOOP("seed2need-core", "CoinSpend: failed check"),
 QT_TRANSLATE_NOOP("seed2need-core", "Connect only to the specified node(s)"),
@@ -314,7 +319,6 @@ QT_TRANSLATE_NOOP("seed2need-core", "Error loading wallet.dat: Wallet corrupted"
 QT_TRANSLATE_NOOP("seed2need-core", "Error loading wallet.dat: Wallet requires newer version of SEED2NEED Core"),
 QT_TRANSLATE_NOOP("seed2need-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("seed2need-core", "Error reading from database, shutting down."),
-QT_TRANSLATE_NOOP("seed2need-core", "Error recovering public key."),
 QT_TRANSLATE_NOOP("seed2need-core", "Error writing zerocoinDB to disk"),
 QT_TRANSLATE_NOOP("seed2need-core", "Error"),
 QT_TRANSLATE_NOOP("seed2need-core", "Error: A fatal internal error occured, see debug.log for details"),
@@ -357,7 +361,6 @@ QT_TRANSLATE_NOOP("seed2need-core", "Invalid amount"),
 QT_TRANSLATE_NOOP("seed2need-core", "Invalid masternodeprivkey. Please see documenation."),
 QT_TRANSLATE_NOOP("seed2need-core", "Invalid netmask specified in -whitelist: '%s'"),
 QT_TRANSLATE_NOOP("seed2need-core", "Invalid port detected in masternode.conf"),
-QT_TRANSLATE_NOOP("seed2need-core", "Invalid private key."),
 QT_TRANSLATE_NOOP("seed2need-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Limit size of signature cache to <n> entries (default: %u)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Line: %d"),
@@ -379,7 +382,7 @@ QT_TRANSLATE_NOOP("seed2need-core", "Masternode options:"),
 QT_TRANSLATE_NOOP("seed2need-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Mint did not make it into blockchain"),
-QT_TRANSLATE_NOOP("seed2need-core", "Need address because change is not exact"),
+QT_TRANSLATE_NOOP("seed2need-core", "Need destination or change address because change is not exact"),
 QT_TRANSLATE_NOOP("seed2need-core", "Need to specify a port with -whitebind: '%s'"),
 QT_TRANSLATE_NOOP("seed2need-core", "Node relay options:"),
 QT_TRANSLATE_NOOP("seed2need-core", "Not enough file descriptors available."),
@@ -428,7 +431,6 @@ QT_TRANSLATE_NOOP("seed2need-core", "Set the number of threads to service RPC ca
 QT_TRANSLATE_NOOP("seed2need-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Show all debugging options (usage: --help -help-debug)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
-QT_TRANSLATE_NOOP("seed2need-core", "Signing failed."),
 QT_TRANSLATE_NOOP("seed2need-core", "Signing timed out."),
 QT_TRANSLATE_NOOP("seed2need-core", "Signing transaction failed"),
 QT_TRANSLATE_NOOP("seed2need-core", "Specify configuration file (default: %s)"),
@@ -471,6 +473,7 @@ QT_TRANSLATE_NOOP("seed2need-core", "Trying to spend an already spent serial #, 
 QT_TRANSLATE_NOOP("seed2need-core", "Unable to bind to %s on this computer (bind returned error %s)"),
 QT_TRANSLATE_NOOP("seed2need-core", "Unable to find transaction containing mint %s"),
 QT_TRANSLATE_NOOP("seed2need-core", "Unable to find transaction containing mint, txHash: %s"),
+QT_TRANSLATE_NOOP("seed2need-core", "Unable to generate initial key"),
 QT_TRANSLATE_NOOP("seed2need-core", "Unable to sign spork message, wrong key?"),
 QT_TRANSLATE_NOOP("seed2need-core", "Unable to start HTTP server. See debug log for details."),
 QT_TRANSLATE_NOOP("seed2need-core", "Unknown network specified in -onlynet: '%s'"),

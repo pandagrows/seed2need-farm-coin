@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "SEED2NEED"
-            VALUE "FileDescription",    "SEED2NEED Core (OSS GUI client for SEED2NEED)"
+            VALUE "CompanyName",        "Seed2Need"
+            VALUE "FileDescription",    "Seed2Need Core (OSS GUI client for Seed2Need)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "seed2need-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "seed2need-qt.exe"
-            VALUE "ProductName",        "SEED2NEED Core"
+            VALUE "ProductName",        "Seed2Need Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

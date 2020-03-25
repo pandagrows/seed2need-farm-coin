@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2017 The Bitcoin Core developers
-// Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,8 +45,8 @@ const std::string CLIENT_NAME("SEED2NEED Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "d6e7f89e2bc96afb13fd0aa892722d2f76d4bd9d"
-#define GIT_COMMIT_DATE "Fri, 13 Sep 2019 18:41:36 +0200"
+#define GIT_COMMIT_ID "1ad209bb3bdf212c70ea5fcf1df032ae3f29f5a6"
+#define GIT_COMMIT_DATE "Tue, 18 Feb 2020 03:04:05 +0100"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
@@ -90,6 +90,11 @@ static std::string FormatVersion(int nVersion)
 std::string FormatFullVersion()
 {
     return CLIENT_BUILD;
+}
+
+std::string FormatVersionFriendly()
+{
+    return FormatVersion(CLIENT_VERSION);
 }
 
 /** 

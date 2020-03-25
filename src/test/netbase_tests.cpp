@@ -1,6 +1,6 @@
 // Copyright (c) 2012-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2015 The Dash Core developers
-// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -62,15 +62,15 @@ BOOST_AUTO_TEST_CASE(netbase_splithost)
     BOOST_CHECK(TestSplitHost("www.bitcoin.org:80", "www.bitcoin.org", 80));
     BOOST_CHECK(TestSplitHost("[www.bitcoin.org]:80", "www.bitcoin.org", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
-    BOOST_CHECK(TestSplitHost("127.0.0.1:14178", "127.0.0.1", 14178));
+    BOOST_CHECK(TestSplitHost("127.0.0.1:2020", "127.0.0.1", 2020));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));
-    BOOST_CHECK(TestSplitHost("[127.0.0.1]:14178", "127.0.0.1", 14178));
+    BOOST_CHECK(TestSplitHost("[127.0.0.1]:2020", "127.0.0.1", 2020));
     BOOST_CHECK(TestSplitHost("::ffff:127.0.0.1", "::ffff:127.0.0.1", -1));
-    BOOST_CHECK(TestSplitHost("[::ffff:127.0.0.1]:14178", "::ffff:127.0.0.1", 14178));
-    BOOST_CHECK(TestSplitHost("[::]:14178", "::", 14178));
-    BOOST_CHECK(TestSplitHost("::14178", "::14178", -1));
-    BOOST_CHECK(TestSplitHost(":14178", "", 14178));
-    BOOST_CHECK(TestSplitHost("[]:14178", "", 14178));
+    BOOST_CHECK(TestSplitHost("[::ffff:127.0.0.1]:2020", "::ffff:127.0.0.1", 2020));
+    BOOST_CHECK(TestSplitHost("[::]:2020", "::", 2020));
+    BOOST_CHECK(TestSplitHost("::2020", "::2020", -1));
+    BOOST_CHECK(TestSplitHost(":2020", "", 2020));
+    BOOST_CHECK(TestSplitHost("[]:2020", "", 2020));
     BOOST_CHECK(TestSplitHost("", "", -1));
 }
 
@@ -85,10 +85,10 @@ bool static TestParse(std::string src, std::string canon)
 BOOST_AUTO_TEST_CASE(netbase_lookupnumeric)
 {
     BOOST_CHECK(TestParse("127.0.0.1", "127.0.0.1:65535"));
-    BOOST_CHECK(TestParse("127.0.0.1:14178", "127.0.0.1:14178"));
+    BOOST_CHECK(TestParse("127.0.0.1:2020", "127.0.0.1:2020"));
     BOOST_CHECK(TestParse("::ffff:127.0.0.1", "127.0.0.1:65535"));
     BOOST_CHECK(TestParse("::", "[::]:65535"));
-    BOOST_CHECK(TestParse("[::]:14178", "[::]:14178"));
+    BOOST_CHECK(TestParse("[::]:2020", "[::]:2020"));
     BOOST_CHECK(TestParse("[127.0.0.1]", "127.0.0.1:65535"));
     BOOST_CHECK(TestParse(":::", ""));
 }

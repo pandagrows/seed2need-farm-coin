@@ -43,7 +43,7 @@ Build SEED2NEED Core
 
 1. Clone the SEED2NEED Core source code:
 
-        git clone https://github.com/seed2need/seed2need
+        git clone https://github.com/seed2need-project/seed2need
         cd seed2need
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).

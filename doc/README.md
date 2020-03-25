@@ -3,7 +3,7 @@ SEED2NEED Core
 
 Setup
 ---------------------
-[SEED2NEED Core](https://www.seed2need.me/wallet) is the original SEED2NEED client and it builds the backbone of the network. However, it downloads and stores the entire history of SEED2NEED transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[SEED2NEED Core](http://seed2need.org/wallet) is the original SEED2NEED client and it builds the backbone of the network. However, it downloads and stores the entire history of SEED2NEED transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -26,10 +26,10 @@ Drag SEED2NEED-Qt to your applications folder, and then run SEED2NEED-Qt.
 
 ### Need Help?
 
-* See the documentation at the [SEED2NEED Wiki](https://github.com/pandagrows/seed2need-farm-coin/wiki)
+* See the documentation at the [SEED2NEED Wiki](https://github.com/SEED2NEED-Project/SEED2NEED/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [SEED2NEED Forum](http://forum.seed2need.org/).
-* Join our Discord server [Discord Server](https://discord.gg/GTF2k25)
+* Join our Discord server [Discord Server](https://discord.seed2need.org)
 
 Building
 ---------------------
@@ -57,7 +57,7 @@ The SEED2NEED repo's [root README](/README.md) contains relevant information on 
 
 ### Resources
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [SEED2NEED](http://forum.seed2need.org/) forum.
-* Join the [SEED2NEED Discord](https://discord.gg/GTF2k25).
+* Join the [SEED2NEED Discord](https://discord.seed2need.org).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

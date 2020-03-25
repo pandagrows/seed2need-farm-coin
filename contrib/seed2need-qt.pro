@@ -658,3 +658,6 @@ TRANSLATIONS += src/qt/locale/seed2need_bg.ts \
                 src/qt/locale/seed2need_vi.ts \
                 src/qt/locale/seed2need_zh_CN.ts \
                 src/qt/locale/seed2need_zh_TW.ts
+
+DISTFILES += \
+    README.md

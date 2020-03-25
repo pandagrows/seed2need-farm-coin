@@ -105,7 +105,7 @@ For example:
   ./github-merge.py 3077
 
 (in any git repository) will help you merge pull request #3077 for the
-CIRCUIT-Project/CIRCUIT repository.
+SEED2NEED-Project/SEED2NEED repository.
 
 What it does:
 * Fetch master and the pull request.
@@ -123,9 +123,9 @@ couldn't mess with the sources.
 
 Setup
 ---------
-Configuring the github-merge tool for the CIRCUIT repository is done in the following way:
+Configuring the github-merge tool for the SEED2NEED repository is done in the following way:
 
-    git config githubmerge.repository CIRCUIT-Project/CIRCUIT
+    git config githubmerge.repository SEED2NEED-Project/SEED2NEED
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
     git config --global user.signingkey mykeyid
 
@@ -158,7 +158,7 @@ for further details.
 optimize-pngs.py
 ================
 
-A script to optimize png files in the CIRCUIT
+A script to optimize png files in the SEED2NEED
 repository (requires pngcrush).
 
 security-check.py and test-security-check.py

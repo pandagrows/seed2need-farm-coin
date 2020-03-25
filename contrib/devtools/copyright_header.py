@@ -119,8 +119,11 @@ EXPECTED_HOLDER_NAMES = [
     "The Dash developers\n",
     "The Dash Developers\n",
     "The Dash Core developers\n",
-    "The CIRCUIT developers\n",
+    "The SEED2NEED developers\n",
     "The PPCoin developers\n",
+    "The NovaCoin Developers",
+    "The BlackCoin Developers\n",
+    "The Blackcoin More developers\n",
 ]
 
 DOMINANT_STYLE_COMPILED = {}
@@ -353,7 +356,7 @@ def write_file_lines(filename, file_lines):
 COPYRIGHT = 'Copyright \(c\)'
 YEAR = "20[0-9][0-9]"
 YEAR_RANGE = '(%s)(-%s)?' % (YEAR, YEAR)
-HOLDER = 'The CIRCUIT developers'
+HOLDER = 'The SEED2NEED developers'
 UPDATEABLE_LINE_COMPILED = re.compile(' '.join([COPYRIGHT, YEAR_RANGE, HOLDER]))
 
 def get_updatable_copyright_line(file_lines):

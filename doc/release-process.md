@@ -6,11 +6,12 @@ Release Process
 ### Before every release candidate
 
 * Update translations (ping Fuzzbawls on Discord) see [translation_process.md](https://github.com/SEED2NEED-Project/SEED2NEED/blob/master/doc/translation_process.md#synchronising-translations).
-* Update manpages, see [gen-manpages.sh](https://github.com/seed2need/seed2need/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/seed2need-project/seed2need/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update release candidate version in `configure.ac` (`CLIENT_VERSION_RC`)
 
 ### Before every major and minor release
 
-* Update version in `configure.ac` (don't forget to set `CLIENT_VERSION_IS_RELEASE` to `true`)
+* Update version in `configure.ac` (don't forget to set `CLIENT_VERSION_IS_RELEASE` to `true`) (don't forget to set `CLIENT_VERSION_RC` to `0`)
 * Write release notes (see below)
 
 ### Before every major release
@@ -48,10 +49,10 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/seed2need/gitian.sigs.git
-    git clone https://github.com/seed2need/seed2need-detached-sigs.git
+    git clone https://github.com/seed2need-project/gitian.sigs.git
+    git clone https://github.com/seed2need-project/seed2need-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/seed2need/seed2need.git
+    git clone https://github.com/seed2need-project/seed2need.git
 
 ### SEED2NEED maintainers/release engineers, suggestion for writing release notes
 

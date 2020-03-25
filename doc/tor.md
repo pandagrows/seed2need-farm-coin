@@ -46,11 +46,11 @@ config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. Fo
 versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 
 	HiddenServiceDir /var/lib/tor/seed2need-service/
-	HiddenServicePort 14178 127.0.0.1:14178
+	HiddenServicePort 2020 127.0.0.1:2020
 	HiddenServicePort 61472 127.0.0.1:61472
 
 The directory can be different of course, but (both) port numbers should be equal to
-your seed2needd's P2P listen port (14178 by default).
+your seed2needd's P2P listen port (2020 by default).
 
 	-externalip=X   You can tell seed2need about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -85,7 +85,7 @@ as well, use `discover` instead:
 
 	./seed2needd ... -discover
 
-and open port 14178 on your firewall (or use -upnp).
+and open port 2020 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:

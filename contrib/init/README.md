@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: circuitd.service
-Upstart: circuitd.conf
-OpenRC:  circuitd.openrc
-         circuitd.openrcconf
-CentOS:  circuitd.init
-macOS:    org.circuit.circuitd.plist
+SystemD: seed2needd.service
+Upstart: seed2needd.conf
+OpenRC:  seed2needd.openrc
+         seed2needd.openrcconf
+CentOS:  seed2needd.init
+macOS:    org.seed2need.seed2needd.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

@@ -7,7 +7,7 @@ export LC_ALL=C
 set -e
 
 ROOTDIR=dist
-BUNDLE=${ROOTDIR}/CIRCUIT-Qt.app
+BUNDLE=${ROOTDIR}/SEED2NEED-Qt.app
 CODESIGN=codesign
 TEMPDIR=sign.temp
 TEMPLIST=${TEMPDIR}/signatures.txt

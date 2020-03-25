@@ -8,7 +8,7 @@ Transifex is setup to monitor the GitHub repo for updates, and when code contain
 
 Multiple language support is critical in assisting SEED2NEED's global adoption, and growth. One of SEED2NEED's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex SEED2NEED project](https://www.transifex.com/seed2need/seed2need-translations/) to assist in translations.
+See the [Transifex SEED2NEED project](https://www.transifex.com/seed2need-project/seed2need-project-translations/) to assist in translations.
 
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
@@ -43,7 +43,7 @@ git commit
 ### Creating a Transifex account
 Visit the [Transifex Signup](https://www.transifex.com/signup/) page to create an account. Take note of your username and password, as they will be required to configure the command-line tool.
 
-You can find the SEED2NEED translation project at [https://www.transifex.com/seed2need/seed2need-translations/](https://www.transifex.com/seed2need/seed2need-translations/).
+You can find the SEED2NEED translation project at [https://www.transifex.com/seed2need-project/seed2need-project-translations/](https://www.transifex.com/seed2need-project/seed2need-project-translations/).
 
 ### Installing the Transifex client command-line tool
 The client is used to fetch updated translations. If you are having problems, or need more details, see [https://docs.transifex.com/client/installing-the-client](https://docs.transifex.com/client/installing-the-client)
@@ -104,6 +104,6 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-The SEED2NEED Core translation maintainers include *DigiWarfare*. You can find them, and others, in the [SEED2NEED Discord](https://discord.gg/GTF2k25).
+The SEED2NEED Core translation maintainers include *Fuzzbawls*. You can find them, and others, in the [SEED2NEED Discord](https://discord.seed2need.org).
 
 Announcements will be posted during application pre-releases to notify translators to check for updates.
