@@ -57,15 +57,15 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    ;
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(  0, uint256("0x"))
+	(  0, uint256("0x00000b76fdf75f599ce14005fc484423949ae7f515a8dfe358ddfed6a1b52a6a"))
 	;
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    //1567975885, // * UNIX timestamp of last checkpoint block
-    //308584,    // * total number of transactions between genesis and last checkpoint
+    1582096211, // * UNIX timestamp of last checkpoint block
+    0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-   // 100        // * estimated number of transactions per day after checkpoint
+    100        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -158,9 +158,9 @@ public:
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 8100; // 75%
-        nRejectBlockOutdatedMajority = 10260; // 95%
-        nToCheckBlockUpgradeMajority = 10800; // Approximate expected amount of blocks in 7 days (1440*7.5)
+        nEnforceBlockUpgradeMajority = 750; // 75%
+        nRejectBlockOutdatedMajority = 950; // 95%
+        nToCheckBlockUpgradeMajority = 1000; // Approximate expected amount of blocks in 7 days (1440*7.5)
         nMinerThreads = 0;
         nTargetSpacing = 1 * 90;                        // 90 Seconds
         nTargetTimespan = 40 * 60;                      // 40 minutes
@@ -168,7 +168,7 @@ public:
         nTargetTimespan_V2 = 2 * nTimeSlotLength * 60;  // 30 minutes
         nMaturity = 150;								// 150 Blocks
         nStakeMinAge = 12* 60 * 60 * 2;                 // 24 hour
-        nStakeMinDepth = 600;
+        nStakeMinDepth = 300;
         nFutureTimeDriftPoW = 7200;
         nFutureTimeDriftPoS = 180;
         nMasternodeCountDrift = 20;
@@ -196,10 +196,10 @@ public:
         nBlockDoubleAccumulated = 999999999;
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after Monday, August 26, 2019 11:00:00 PM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
-        nBlockStakeModifierlV2 = 110000;
-        nBIP65ActivationHeight = 410000;
+        nBlockStakeModifierlV2 = 500000;
+        nBIP65ActivationHeight = 10000;
         // Activation height for TimeProtocolV2, Blocks V7 and newMessageSignatures
-        nBlockTimeProtocolV2 = 400000;
+        nBlockTimeProtocolV2 = 200000;
 
         // Public coin spend enforcement
         nPublicZCSpends = 0;
@@ -208,7 +208,7 @@ public:
         nBlockEnforceNewMessageSignatures = nBlockTimeProtocolV2;
 
         // Blocks v7
-        nBlockLastAccumulatorCheckpoint = 400000;
+        nBlockLastAccumulatorCheckpoint = 200000;
         nBlockV7StartHeight = nBlockTimeProtocolV2;
 
         // Fake Serial Attack
@@ -241,32 +241,7 @@ public:
         genesis.nNonce = 1406739; // SET to 0 to regen
 
         hashGenesisBlock = genesis.GetHash();
-		/*
-		if(genesis.GetHash() != uint256("0x"))
-        {
-              printf("MSearching for genesis block...\n");
-              uint256 hashTarget;
-              hashTarget.SetCompact(genesis.nBits);
-              while(uint256(genesis.GetHash()) > uint256(hashTarget))
-              {
-                  ++genesis.nNonce;
-                  if (genesis.nNonce == 0)
-                  {
-                      printf("Mainnet NONCE WRAPPED, incrementing time");
-                      std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
-                      ++genesis.nTime;
-                  }
-                  if (genesis.nNonce % 10000 == 0)
-                  {
-                      printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
-                  }
-              }
-              printf("Mainnet block.nTime = %u \n", genesis.nTime);
-              printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
-              printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-              printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        }
-		*/
+
         assert(hashGenesisBlock == uint256("0x00000b76fdf75f599ce14005fc484423949ae7f515a8dfe358ddfed6a1b52a6a"));
         assert(genesis.hashMerkleRoot == uint256("0xa0c60c660565c3547e4ab133aa24925f9ea8373ba939b27817abb07b3de8bc38"));
 
