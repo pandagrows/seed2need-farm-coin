@@ -2308,18 +2308,18 @@ QPushButton[cssClass="btn-check-time"]:disabled {
 }
 
 *[cssClass="text-title-topbar"] {
-    color:#a3a3a4;  /* Dark grayish blue. https://www.colorhexa.com/a3a3a4 */
+    color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     font-size:16px;
     font-weight: ligther;
 }
 
 *[cssClass="amount-topbar"] {
-    color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
+    color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
     font-size:35px;
 }
 
 *[cssClass="amount-small-topbar"] {
-    color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
+    color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
     font-size:22px;
 }
 
