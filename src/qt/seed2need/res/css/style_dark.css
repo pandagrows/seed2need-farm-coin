@@ -1,5 +1,5 @@
 /***************************************
-Seed2Need Dark CSS Style Guide
+Seed2Need Light CSS Style Guide
 
 #558b2f; Dark moderate green. https://www.colorhexa.com/558b2f
 #7cb342; Moderate green. https://www.colorhexa.com/7cb342
@@ -2084,28 +2084,28 @@ QLabel[cssClass="label-subtitle-dialog"] {
     font-size:20px;
 }
 
-*[cssClass="text-stake-farm"] {
+*[cssClass="text-stake-sct"] {
     color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
-*[cssClass="text-stake-farm-disable"] {
+*[cssClass="text-stake-sct-disable"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #a2cc75; /* Slightly desaturated green. https://www.colorhexa.com/a2cc75 */
 }
 
-*[cssClass="text-stake-zfarm"] {
+*[cssClass="text-stake-zsct"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
-*[cssClass="text-stake-zfarm-disable"] {
+*[cssClass="text-stake-zsct-disable"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding:10px;
@@ -2117,24 +2117,24 @@ QLabel[cssClass="label-subtitle-dialog"] {
     font-size:16px;
 }
 
-*[cssClass="text-chart-zfarm"] {
+*[cssClass="text-chart-zsct"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding-left:4px;
 }
 
-*[cssClass="text-chart-farm"] {
+*[cssClass="text-chart-sct"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding-left:4px;
 }
 
-*[cssClass="square-chart-zfarm"] {
+*[cssClass="square-chart-zsct"] {
     background-color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     border:none;
 }
 
-*[cssClass="square-chart-farm"] {
+*[cssClass="square-chart-sct"] {
     background-color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     border:none;
 }
@@ -2308,18 +2308,18 @@ QPushButton[cssClass="btn-check-time"]:disabled {
 }
 
 *[cssClass="text-title-topbar"] {
-    color:#a3a3a4;  /* Dark grayish blue. https://www.colorhexa.com/a3a3a4 */
+    color:#558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     font-size:16px;
     font-weight: ligther;
 }
 
 *[cssClass="amount-topbar"] {
-    color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
+    color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
     font-size:35px;
 }
 
 *[cssClass="amount-small-topbar"] {
-    color:#FFFFFF; /* White. https://www.colorhexa.com/ffffff */
+    color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
     font-size:22px;
 }
 
@@ -3080,18 +3080,18 @@ QPushButton[cssClass="ic-step-confirm"] {
     border-radius: 2px;
 }
 
-*[cssClass="coin-icon-farm"] {
-    qproperty-icon: url("://ic-coin-farm") off,
-    url("://ic-coin-farm") on ;
+*[cssClass="coin-icon-sct"] {
+    qproperty-icon: url("://ic-coin-sct") off,
+    url("://ic-coin-sct") on ;
     qproperty-iconSize: 24px 24px;
     background-color: #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     border:  2px solid #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     border-radius: 12px;
 }
 
-*[cssClass="coin-icon-zfarm"] {
-    qproperty-icon: url("://ic-coin-zfarm") off,
-    url("://ic-coin-zfarm") on ;
+*[cssClass="coin-icon-zsct"] {
+    qproperty-icon: url("://ic-coin-zsct") off,
+    url("://ic-coin-zsct") on ;
     qproperty-iconSize: 24px 24px;
     background-position:center;
     background-repeat:no-repeat;
