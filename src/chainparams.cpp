@@ -176,7 +176,7 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         nMasternodeCollateral = 1000000;
-        strDevFundAddress = "WebDhZKnSVHrjmq2Zupnr19xfiDB25WRjs";
+        strDevFundAddress = "WUEGhJYhrfnNd9sXMai49b19TMjMLrEsn9";
         nStakeInputMinimal = 5000 * COIN;
 
         /** Height or Time Based Activations **/
