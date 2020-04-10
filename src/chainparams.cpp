@@ -180,7 +180,7 @@ public:
         nStakeInputMinimal = 5000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 300;
+        nLastPOWBlock = 2000;
         nSeed2needBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
         nSeed2needBadBlocknBits = 0x1c056dac; // Skip nBit validation of Block 259201 per PR #915
         nModifierUpdateBlock = 0;
