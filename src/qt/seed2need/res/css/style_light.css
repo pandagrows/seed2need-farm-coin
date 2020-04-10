@@ -1330,7 +1330,7 @@ QToolTip {
 }
 
 QHeaderView::section {
-    background-color: #5c4b7d;
+    background-color: #33558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
     color: #ffffff; /* White. https://www.colorhexa.com/ffffff */
     padding-top: 6px;
     padding-bottom: 6px;
@@ -2084,28 +2084,28 @@ QLabel[cssClass="label-subtitle-dialog"] {
     font-size:20px;
 }
 
-*[cssClass="text-stake-sct"] {
+*[cssClass="text-stake-farm"] {
     color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
-*[cssClass="text-stake-sct-disable"] {
+*[cssClass="text-stake-farm-disable"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #a2cc75; /* Slightly desaturated green. https://www.colorhexa.com/a2cc75 */
 }
 
-*[cssClass="text-stake-zsct"] {
+*[cssClass="text-stake-zfarm"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #558b2f; /* Dark moderate green. https://www.colorhexa.com/558b2f */
 }
 
-*[cssClass="text-stake-zsct-disable"] {
+*[cssClass="text-stake-zfarm-disable"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding:10px;
@@ -2117,24 +2117,24 @@ QLabel[cssClass="label-subtitle-dialog"] {
     font-size:16px;
 }
 
-*[cssClass="text-chart-zsct"] {
+*[cssClass="text-chart-zfarm"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding-left:4px;
 }
 
-*[cssClass="text-chart-sct"] {
+*[cssClass="text-chart-farm"] {
     color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     font-size:16px;
     padding-left:4px;
 }
 
-*[cssClass="square-chart-zsct"] {
+*[cssClass="square-chart-zfarm"] {
     background-color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     border:none;
 }
 
-*[cssClass="square-chart-sct"] {
+*[cssClass="square-chart-farm"] {
     background-color:#7cb342; /* Moderate green. https://www.colorhexa.com/7cb342 */
     border:none;
 }
@@ -3080,18 +3080,18 @@ QPushButton[cssClass="ic-step-confirm"] {
     border-radius: 2px;
 }
 
-*[cssClass="coin-icon-sct"] {
-    qproperty-icon: url("://ic-coin-sct") off,
-    url("://ic-coin-sct") on ;
+*[cssClass="coin-icon-farm"] {
+    qproperty-icon: url("://ic-coin-farm") off,
+    url("://ic-coin-farm") on ;
     qproperty-iconSize: 24px 24px;
     background-color: #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     border:  2px solid #FFFFFF; /* White. https://www.colorhexa.com/ffffff */
     border-radius: 12px;
 }
 
-*[cssClass="coin-icon-zsct"] {
-    qproperty-icon: url("://ic-coin-zsct") off,
-    url("://ic-coin-zsct") on ;
+*[cssClass="coin-icon-zfarm"] {
+    qproperty-icon: url("://ic-coin-zfarm") off,
+    url("://ic-coin-zfarm") on ;
     qproperty-iconSize: 24px 24px;
     background-position:center;
     background-repeat:no-repeat;

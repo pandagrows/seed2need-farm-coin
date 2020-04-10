@@ -751,7 +751,7 @@
                  </size>
                 </property>
                 <property name="styleSheet">
-                 <string notr="true">#chartContainer{padding:0px; margin:0px;}</string>
+                 <string notr="true">#chartContainer{background-color:white;padding:0px; margin:0px;}</string>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_11">
                  <property name="spacing">

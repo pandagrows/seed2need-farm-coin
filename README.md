@@ -9,17 +9,17 @@ The mission of SEED2NEED is to reach world-wide adoption specifically focusing o
 
 More information can be found at the official SEED2NEED website, https://www.seed2need.me 
 
-Visit our ANN thread at :
+Visit our ANN thread at https://bitcointalk.org/index.php?topic=5164625
 
-DOWNLOAD THE OFFICIAL SEED2NEED WALLET: https://github.com/pandagrows/seed2need-farm-coin/releases
+DOWNLOAD THE OFFICIAL SEED2NEED WALLET: https://github.com/Seed2needProject/Seed2need-Project/releases
 
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
-<tr><td>Block Time</td><td>90 Seconds</td></tr>
+<tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Maximum Coin Supply</td><td>21,500,000,000 FARM</td></tr>
-<tr><td>Premine</td><td>50,000,000 FARM</td></tr>
+<tr><td>Maximum Coin Supply</td><td>3,000,000,000 FARM</td></tr>
+<tr><td>Premine</td><td>360,000,000 FARM</td></tr>
 </table>
 
 *Premine outlined in official white paper - https://media.seed2need.me/docs/PDF_Seed2need_Whitepaper.pdf
@@ -29,7 +29,7 @@ DOWNLOAD THE OFFICIAL SEED2NEED WALLET: https://github.com/pandagrows/seed2need-
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>50,000,000 FARM</td><td>Initial pre-mine, non-staking (Please see above)</td></tr>
+<tr><td>1</td><td>360,000,000 FARM</td><td>Initial pre-mine, non-staking (Please see above)</td></tr>
 </table>
 
 
