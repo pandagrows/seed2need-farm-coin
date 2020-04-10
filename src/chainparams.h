@@ -107,6 +107,7 @@ public:
     virtual const Checkpoints::CCheckpointData& Checkpoints() const = 0;
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
     CAmount StakeInputMinimal() const { return nStakeInputMinimal; }
+    int64_t EnforceStakeInputMinimal() const { return nEnforceStakeInputMinimal; }
     /** Return the number of blocks in a budget cycle */
     int GetBudgetCycleBlocks() const { return nBudgetCycleBlocks; }
     int64_t GetProposalEstablishmentTime() const { return nProposalEstablishmentTime; }
@@ -251,6 +252,7 @@ protected:
     int nMasternodeCollateral;
     std::string strDevFundAddress;
     CAmount nStakeInputMinimal;
+    int64_t nEnforceStakeInputMinimal;
 
     int nBlockStakeModifierlV2;
     int nBlockTimeProtocolV2;

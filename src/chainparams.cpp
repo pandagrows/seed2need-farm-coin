@@ -178,6 +178,7 @@ public:
         nMasternodeCollateral = 1000000;
         strDevFundAddress = "WUEGhJYhrfnNd9sXMai49b19TMjMLrEsn9";
         nStakeInputMinimal = 5000 * COIN;
+        nEnforceStakeInputMinimal = 10000;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 300;

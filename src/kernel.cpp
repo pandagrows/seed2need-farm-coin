@@ -292,7 +292,7 @@ bool CheckStakeKernelHash(const CBlockIndex* pindexPrev, const unsigned int nBit
 
     const CAmount& nValueIn = stake->GetValue();
 
-    if (Params().StakeInputMinimal() > nValueIn && pindexPrev->nHeight > 300000)
+    if (Params().StakeInputMinimal() > nValueIn && pindexPrev->nHeight > Params().EnforceStakeInputMinimal())
         return error("%s : Failed to check coinstake min amount", __func__);
 
     const CDataStream& ssUniqueID = stake->GetUniqueness();
@@ -514,7 +514,7 @@ bool CheckProofOfStake(const CBlock& block, uint256& hashProofOfStake, std::uniq
                              __func__, nPreviousBlockHeight, nTxTime, nBlockFromTime, nBlockFromHeight);
     }
 
-    if (!CheckStakeKernelHash(pindexPrev, block.nBits, stake.get(), nTxTime, hashProofOfStake, true))
+    if (pindexfrom->nHeight > 400 && !CheckStakeKernelHash(pindexPrev, block.nBits, stake.get(), nTxTime, hashProofOfStake, true))
         return error("%s : INFO: check kernel failed on coinstake %s, hashProof=%s", __func__,
                      tx.GetHash().GetHex(), hashProofOfStake.GetHex());
 

@@ -2156,7 +2156,7 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
             if (out.tx->vin[0].IsZerocoinSpend() && !out.tx->IsInMainChain())
                 continue;
 
-	    if (out.tx->vout[out.i].nValue < Params().StakeInputMinimal())
+	    if (out.tx->vout[out.i].nValue < Params().StakeInputMinimal() && blockHeight > Params().EnforceStakeInputMinimal())
                 continue;
 
             if (!out.tx->hashBlock)
@@ -2200,11 +2200,12 @@ bool CWallet::MintableCoins()
         AvailableCoins(vCoins, true, NULL, false, STAKABLE_COINS, false, 1, fIncludeCold, false);
 
         CAmount nMinAmount = Params().StakeInputMinimal();
+        int64_t nEnforceStakeInputMinimal = Params().EnforceStakeInputMinimal(); 
 
         int64_t time = GetAdjustedTime();
         for (const COutput& out : vCoins) {
     
-            if (out.Value() <= nMinAmount)
+            if ((out.Value() <= nMinAmount) && (chainHeight > nEnforceStakeInputMinimal))
                 continue;
 
             CBlockIndex* utxoBlock = mapBlockIndex.at(out.tx->hashBlock);
