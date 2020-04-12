@@ -91,7 +91,7 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty(ui->pushButtonExit, "btn-faq-exit");
 
     // Web Link
-    ui->pushButtonWebLink->setText("https://www.seed2need-society.io/");
+    ui->pushButtonWebLink->setText("https://www.seed2need.me/");
     setCssProperty(ui->pushButtonWebLink, "btn-faq-web");
     setCssProperty(ui->containerButtons, "container-faq-buttons");
 

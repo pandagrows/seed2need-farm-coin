@@ -135,7 +135,7 @@ QPushButton[cssClass="btn-welcome-number-check"] {
     background-color:transparent;
     font-size:14px;
     border-radius:11px;
-    color:#a2cc75; /* Slightly desaturated green. https://www.colorhexa.com/a2cc75 */
+    color:#35281c; /* Very dark desaturated orange. https://www.colorhexa.com/35281c */
 }
 
 QPushButton[cssClass="btn-welcome-number-check"]:checked {
