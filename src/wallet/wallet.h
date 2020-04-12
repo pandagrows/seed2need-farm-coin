@@ -166,7 +166,7 @@ public:
         SetLastTip(nullptr);
         SetLastTime(0);
     }
-    bool IsActive() { return true;//(timeLastStakeAttempt + 30) >= GetTime();
+    bool IsActive() { return (timeLastStakeAttempt + 30) >= GetTime();
         
     }
 };
@@ -267,7 +267,6 @@ public:
     bool UpdateMint(const CBigNum& bnValue, const int& nHeight, const uint256& txid, const libzerocoin::CoinDenomination& denom);
     std::string GetUniqueWalletBackupName(bool fzfarmAuto) const;
     void InitAutoConvertAddresses();
-
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
