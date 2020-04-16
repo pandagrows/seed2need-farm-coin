@@ -1,11 +1,9 @@
 SEED2NEED Core integration/staging repository
 =====================================
 
-SEED2NEED is an innovative cryptocurrency geared towards the fanatics and supporters of the competitive racing industry. Utilizing the PIVX protocol, it utilizes the first ever anonymous proof-of-stake protocol, named zPoS, combined with regular PoS and masternode technology for securing its network. ZPoS incentivizes using the privacy feature by granting higher block rewards over regular PoS and masternodes. In reality, SEED2NEED has between 4 to 10 times higher use of its privacy feautres in comparison to other digital currencies that combine public and private transactions. With this innovation, integrating the technology into mobile wallets allows for a complete and lightweight privacy protocol that can be used worldwide.
+SEED2NEED is an organically grown cryptocurrency project. We have dedicated ourselves to deliver blockchain awareness to the agricultural sector. Utilizing the PIVX protocol, Seed2Need utilizes Proof-of-Stake (PoS), Proof-of-Work (PoW), and Masternode (MN) technology. With this enhanced protocol, we need that Seed2Need has nearly zero transaction fees with lightning speed transaction times.
 
-SEED2NEED utilizes the proof-of-stake protocol with the enhancement of masternode technology with nearly zero transaction fees.
-
-The mission of SEED2NEED is to reach world-wide adoption specifically focusing on the competitive racing audiences.
+Seed2Need has been 4 to 10 times higher use of its privacy features in comparison to other digital currencies that combine public and private transactions. With this innovation, integrating the technology into mobile wallets allows for a complete and lightweight privacy protocol that can be used worldwide.
 
 More information can be found at the official SEED2NEED website, https://www.seed2need.me 
 
@@ -29,7 +27,7 @@ DOWNLOAD THE OFFICIAL SEED2NEED WALLET: https://github.com/Seed2needProject/Seed
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>360,000,000 FARM</td><td>Initial pre-mine, non-staking (Please see above)</td></tr>
+<tr><td>1</td><td>50,000,000 FARM</td><td>Initial pre-mine, non-staking (Please see above)</td></tr>
 </table>
 
 
