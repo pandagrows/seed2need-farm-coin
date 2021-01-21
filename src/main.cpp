@@ -2022,12 +2022,12 @@ int64_t GetBlockValue(int nHeight)
     }
     else {
         ret = COIN * 0;
-     }
+	}
 
     LogPrint("debug","%s: Reward:%s nHeight:%s\n", __func__, FormatMoney(ret), nHeight);
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
     return ret;
-    }
+}
 
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, bool isZFARMStake)
@@ -4700,7 +4700,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
             // Now that this loop if completed. Check if we have zFARM inputs.
             if(hasZFARMInputs){
-                for (const CTxIn& zCrctInput : zFARMInputs) {
+                for (const CTxIn& zFarmInput : zFARMInputs) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zCrctInput);
 
                     // First check if the serials were not already spent on the forked blocks.
@@ -4763,7 +4763,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-                for (const CTxIn& zCrctInput : zFARMInputs) {
+                for (const CTxIn& zFarmInput : zFARMInputs) {
                         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zCrctInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex, 0))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
