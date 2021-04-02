@@ -4701,7 +4701,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             // Now that this loop if completed. Check if we have zFARM inputs.
             if(hasZFARMInputs){
                 for (const CTxIn& zFarmInput : zFARMInputs) {
-                    libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zCrctInput);
+                    libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zFarmInput);
 
                     // First check if the serials were not already spent on the forked blocks.
                     CBigNum coinSerial = spend.getCoinSerialNumber();
@@ -4764,7 +4764,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         } else {
             if(!isBlockFromFork)
                 for (const CTxIn& zFarmInput : zFARMInputs) {
-                        libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zCrctInput);
+                        libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zFarmInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex, 0))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
                                     stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zfarm");
